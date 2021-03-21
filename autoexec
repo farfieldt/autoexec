@@ -1,0 +1,408 @@
+//AUTOEXEC //
+
+//--------------------------------------------------//
+//Video //
+
+
+mat_monitorgamma "1.6"
+mat_queue_mode "-1" // auto detect multi-core rendering
+fps_max "999"
+fps_max_menu "241"
+r_dynamic "0"
+r_drawtracers_firstperson "0"
+
+
+//--------------------------------------------------//
+//NETWORK //
+
+
+rate "786432"
+
+cl_cmdrate "128"
+cl_updaterate "128"
+cl_timeout "500"
+cl_interp "0"
+cl_interp_ratio "1"
+cl_join_advertise "2"
+
+rate 786432
+
+
+//--------------------------------------------------//
+//AUDIO //
+
+
+volume "0.2"
+voice_enable "1"
+voice_scale "1"
+windows_speaker_config "1"
+snd_musicvolume "0.04"
+snd_tensecondwarning_volume "0.1"
+snd_menumusic_volume "0"
+snd_roundend_volume "0"
+snd_roundstart_volume "0"
+snd_deathcamera_volume "0"
+snd_mapobjective_volume "0"
+snd_mixahead "0.005"
+
+//--------------------------------------------------//
+//INTERFACE/HUD //
+
+
+player_nevershow_communityservermessage "1"
+cl_show_team_equipment "1"
++cl_show_team_equipment
+cl_showloadout "1"
+cl_radar_scale "0.4"
+cl_use_opens_buy_menu "0"
+cl_teamid_overhead_always "1"
+cl_hud_playercount_showcount "1"
+cl_hud_color "10"
+cl_showfps "1"
+cl_hud_playercount_pos "0"
+cl_radar_icon_scale_min "0.5"
+cl_hud_healthammo_style "1"
+cl_hud_background_alpha "0.6"
+cl_hud_bomb_under_radar "1"
+cl_drawhud "1"
+cl_teammate_colors_show "1"
+
+
+//--------------------------------------------------//
+//CROSSHAIR //
+
+
+cl_crosshair_drawoutline "1.000000"
+cl_crosshair_dynamic_maxdist_splitratio "0"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "1.000000"
+cl_crosshair_dynamic_splitdist "5"
+cl_crosshair_outlinethickness "1.000000"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "2"
+cl_crosshair_t "0.000000"
+cl_crosshairalpha "255.000000"
+cl_crosshaircolor "5.000000"
+cl_crosshaircolor_b "255.000000"
+cl_crosshaircolor_g "0.000000"
+cl_crosshaircolor_r "255.000000"
+cl_crosshairdot "0.000000"
+cl_crosshairgap "-2.000000"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairscale "0"
+cl_crosshairsize "3.000000"
+cl_crosshairstyle "4.000000"
+cl_crosshairthickness "1.000000"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "-1"
+
+
+//--------------------------------------------------//
+//VIEWMODEL //
+
+
+viewmodel_presetpos "0"
+cl_righthand "0"
+cl_viewmodel_shift_left_amt "0.500000"
+cl_viewmodel_shift_right_amt "0.250000"
+viewmodel_fov "54"
+viewmodel_offset_x "2.5"
+viewmodel_offset_y "-1.900000"
+viewmodel_offset_z "-2.0"
+viewmodel_presetpos "0"
+cl_bob_lower_amt "5.000000"
+cl_bobamt_lat "0.100000"
+cl_bobamt_vert "0.100000"
+cl_bobcycle "0.98"
+
+
+//--------------------------------------------------//
+//ENGINE //
+
+
+cl_forcepreload "1"
+engine_no_focus_sleep "0"
+
+
+//--------------------------------------------------//
+//MOUSE //
+
+
+zoom_sensitivity_ratio_mouse "0.818933027098955175"
+m_rawinput "1"
+m_customaccel "0"
+m_customaccel_scale "0"
+m_mousespeed "0"
+m_mouseaccel1 "0"
+m_mouseaccel2 "0"
+joystick “0”
+sensitivity "1.35"
+
+
+//--------------------------------------------------//
+//MOUSE BINDINGS //
+
+
+bind "MOUSE1" "+attack
+bind "MOUSE2" "+attack2"
+
+
+//JUMP//
+bind "MWHEELUP" "+jump"
+bind "MWHEELDOWN" "+jump"
+
+
+//--------------------------------------------------//
+//MOVMENT BINDINGS //
+
+
+//forward//
+bind "y" "+forward"
+
+//back//
+bind "h" "+back"
+
+//left//
+bind "g" "+moveleft"
+
+//right//
+bind "j" "+moveright"
+
+//sneak//
+bind "c" "+speed"
+
+//crouch//
+bind "space" "+duck"
+
+//JUMP//
+bind "MWHEELUP" "+jump"
+bind "MWHEELDOWN" "+jump"
+
+
+//--------------------------------------------------//
+//BINDINGS //
+
+
+//clear decals//
+bind y "+forward;r_cleardecals";
+bind g "+moveleft;r_cleardecals";
+bind h "+back;r_cleardecals";
+bind j "+moveright;r_cleardecals"
+bind n "+moveright;r_cleardecals"
+
+bind "u" "+use"
+bind "l" "drop"
+bind "i" "+reload"
+
+bind "5" "slot1"
+bind "6" "slot2"
+bind "7" "slot3"
+bind "8" "slot4"
+bind "9" "slot5"
+
+//chat//
+bind "n" "+voicerecord"
+
+bind "end" "disconnect"
+bind "f" "+showscores"
+bind "." "buymenu"
+bind "F3" "autobuy"
+bind "F4" "rebuy"
+
+
+//alias "gameinstructor_switch" "gameinstructor_on"//
+//alias "gameinstructor_off" "gameinstructor_enable 0; bind # gameinstructor_on; echo//
+
+//EXECUTED: Ninja mode DISABLED."//
+//alias "gameinstructor_on" "gameinstructor_enable 1; bind # gameinstructor_off; echo//
+
+//EXECUTED: Ninja mode ENABLED."//
+//bind "#" "gameinstructor_switch"//
+
+
+//alias "lefth_righth_switch" "righthand"//
+//alias "righthand" "cl_righthand 1; bind j lefthand; echo EXECUTED: You are now//
+
+//RIGHTHANDED."//
+//alias "lefthand" "cl_righthand 0; bind j righthand; echo EXECUTED: You are now//
+
+//LEFTHANDED."//
+//bind ";" "lefth_righth_switch"//
+
+
+alias "warmup" "exec warmup.cfg; echo EXECUTED: Warmup sequence INITIATED."
+bind "" "warmup"
+
+
+alias show show1
+alias show1 "+cl_show_team_equipment; bind w +showup; alias show show2"
+alias show2 "unbind w; -cl_show_team_equipment; bind w +forward; alias show show1"
+
+
+alias +showup "+forward; +cl_show_team_equipment"
+alias -showup "-forward;"
+
+
+cl_teamid_overhead_maxdist 9999
+
+
+bind "`" "toggleconsole
+
+
+alias "+quickswitch" "slot3"
+alias "-quickswitch" "lastinv"
+bind "t" "+quickswitch"
+
+
+//--------------------------------------------------//
+//UNBINDINGS //
+
+
+unbind "0"
+unbind "1"
+unbind "2"
+unbind "3"
+unbind "4"
+unbind "a"
+unbind "b"
+unbind "d"
+unbind "e"
+unbind "q"
+unbind "r"
+unbind "s"
+unbind "w"
+unbind "x"
+unbind "z"
+unbind "SHIFT"
+unbind "F7"
+unbind "F10"
+
+
+//--------------------------------------------------//
+//GAME //
+
+
+cl_autowepswitch "0"
+
+cl_lagcompensation “1”
+cl_predict “1”
+cl_predictweapons “1”
+cl_predictweapons 1
+cl_interp “0”
+cl_interp_ratio “1”
+cl_cmdrate “128”
+cl_updaterate “128”
+rate “786432”
+
+cl_downloadfilter “nosounds”
+
+cl_autohelp 0;
+cl_disablefreezecam 1;
+cl_disablehtmlmotd 1;
+cl_showhelp 0;
+cl_freezecameffects_showholiday 0;
+gameinstructor_enable 0;
+mat_queue_mode -1;
+r_drawtracers_firstperson 0;
+r_dynamic 0;
+
+
+
+
+cl_forcepreload “1”
+r_dynamic “1”
+
+
+
+//Alias//
+alias "taser" "give weapon_taser"
+alias "zeus" "give weapon_taser"
+
+
+// Knive's//
+alias "bayonet" "give weapon_bayonet"
+alias "flip" "give weapon_knife_flip"
+alias "gut" "give weapon_knife_gut"
+alias "karambit" "give weapon_knife_karambit"
+alias "m9_bayonet" "give weapon_knife_m9_bayonet"
+
+
+// Nade's//
+alias "decoy" "give weapon_decoy"
+alias "flashbang" "give weapon_flashbang"
+alias "grenade" "give weapon_hegrenade"
+alias "incendiary" "give weapon_Incgrenade"
+alias "molotov" "give weapon_molotov"
+alias "smoke" "give weapon_smokegrenade"
+
+
+// Pistol's//
+alias "deagle" "give weapon_deagle"
+alias "fiveseven" "give weapon_fiveseven"
+alias "glock" "give weapon_glock"
+alias "p2000" "give weapon_hkp2000"
+alias "P250" "give weapon_P250"
+alias "usp" "give weapon_usp_silencer"
+
+
+// Smgs//
+alias "bizon" "give weapon_bizon"
+alias "mac10" "give weapon_mac10"
+alias "mp7" "give weapon_mp7"
+alias "mp9" "give weapon_mp9"
+alias "P90" "give weapon_P90"
+alias "ump" "give weapon_ump45
+
+
+// Heavy's//
+alias "mag7" "give weapon_mag7"
+alias "Negev" "give weapon_negev"
+alias "Nova" "give weapon_nova"
+alias "Sawedoff" "give weapon_SAWEDOFF"
+alias "Xm" "give weapon_XM1014"
+
+
+// Rifles//
+alias "ak" "give weapon_ak47"
+alias "aug" "give weapon_aug"
+alias "awp" "give weapon_awp"
+alias "colt" "give weapon_m4a1_silencer"
+alias "famas" "give weapon_famas"
+alias "galil" "give weapon_galilar"
+alias "m4" "give weapon_m4a1"
+alias "scar" "give weapon_SCAR20"
+alias "scout" "give weapon_ssg08"
+
+
+//--------------------------------------------------//
+//CONSOLE //
+
+
+bind "-" "toggleconsole"
+
+developer "1"
+con_filter_enable "2"
+con_filter_text "Damage"
+con_filter_text "given"
+con_filter_text_out "Error"
+con_filter_text_out "Avatar"
+con_filter_text_out "Request"
+con_filter_text_out "Inventory"
+con_filter_text_out "Steamworks"
+
+
+//--------------------------------------------------//
+//END //
+
+
+rate 786432
+
+host_writeconfig
+
+clear
+echo "//--------------------------------------------------//"
+echo "EXECUTED"
+echo "//--------------------------------------------------//"
+
+
+//-console -novid -nojoy -language english -freq 240 -tickr -128 -tickrate 128//
